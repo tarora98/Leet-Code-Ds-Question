@@ -1,4 +1,4 @@
-class Solution {
+class LeetCode17 {
     static String[] words={"",":;/","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz","&*%","#@$","&*%"};
     public List<String> letterCombinations(String digits) {
         return solved(digits,0);
