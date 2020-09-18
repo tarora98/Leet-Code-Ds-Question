@@ -33,7 +33,10 @@ public class Tree{
 		return true;  
 	    }
 	    return find(node.left,element) || find(node.right,element);
-	}
+    }
+    public static int height(Node root){
+        return root==null?-1:Math.max(height(root.left),height(root.right))+1;
+    }
 
 
 
@@ -49,12 +52,14 @@ public class Tree{
 		System.out.println(sb);
 		print(node.left);
 		print(node.right);
-	}
+    }
+    
 public static void main(String[] args){
 	int arr[]={10,20,40,-1,-1,50,80,-1,-1,90,-1,-1,30,60,100,-1,-1,-1,70,110,-1,-1,120,-1,-1};
 	Node root=constructorTree(arr);
 	print(root);
 	System.out.println(size(root));
-	System.out.println(find(root,90));
+    System.out.println(find(root,90));
+	System.out.println(height(root));
 } 
 }
