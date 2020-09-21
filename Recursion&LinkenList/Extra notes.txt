@@ -1,0 +1,3 @@
+At a basic level, row stores are great for transaction processing. Column stores are great for highly analytical query models. Row stores have the ability to write data very quickly, whereas a column store is awesome at aggregating large volumes of data for a subset of columns.
+
+One of the benefits of a columnar database is its crazy fast query speeds. In some cases, queries that took minutes or hours are completed in seconds. This makes columnar databases a good choice in a query-heavy environment. But you must make sure that the queries you run are really suited to a columnar database.
